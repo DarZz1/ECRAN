@@ -188,20 +188,6 @@ iframe {
     --shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
     --shadow-hover: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.3), 0 0 0 1px rgba(10, 10, 10, 0.05);
     --columns: 2;
-
-    --swiper-theme-color: var(--color-primary);
-    --swiper-navigation-size: 1.5em;
-    --swiper-navigation-top-offset: 50%;
-    --swiper-navigation-sides-offset: -0.5em;
-    --swiper-navigation-color: var(--color-primary);
-    --swiper-navigation-bg-arrow: '';
-    --swiper-pagination-bullet-horizontal-gap: 4px;
-    --swiper-pagination-bullet-size: 10px;
-    --swiper-pagination-bullet-width: 10px;
-    --swiper-pagination-bullet-height: 10px;
-    --swiper-pagination-bullet-border-radius: 50%;
-    --swiper-pagination-bullet-opacity: 1;
-    --swiper-pagination-color: var(--color-primary);
 }
 
 @media (min-width: 768px) {
@@ -2210,6 +2196,7 @@ section.b-text-media {
 
 .swiper-slide {
     height: auto;
+    display: flex;
 }
 
 @media (max-width: 767px) {
