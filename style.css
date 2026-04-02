@@ -3671,7 +3671,6 @@ a.card:hover,
 
 .swiper {
     position: static;
-    opacity: 0;
     cursor: grab;
 }
 
