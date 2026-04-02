@@ -1,4 +1,4 @@
-const swiper = new Swiper('.mySwiper', {
+const swiper = new Swiper('.gallerySwiper', {
     direction: 'horizontal',
     loop: true,
 
@@ -12,6 +12,5 @@ const swiper = new Swiper('.mySwiper', {
       clickable: true,
     },
 
-    slidesPerView: 2, 
-    spaceBetween: 10,
+    spaceBetween: 20,
   });
