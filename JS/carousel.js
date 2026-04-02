@@ -12,5 +12,6 @@ const swiper = new Swiper('.gallerySwiper', {
       clickable: true,
     },
 
+    slidesPerView: 5,
     spaceBetween: 20,
   });
