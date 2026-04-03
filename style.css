@@ -545,11 +545,11 @@ hr {
 }
 
 .swiper-button-prev {
-    left: 10px !important;
+    left: 0px !important;
 }
 
 .swiper-button-next {
-    right: 10px !important;
+    right: 0px !important;
 }
 
 @media (max-width: 576px) {
@@ -2572,6 +2572,7 @@ section.b-text-media {
     .slider__gallery {
         --col: 1;
         margin-bottom: 60px;
+        overflow: visible;
     }
 }
 
@@ -2583,10 +2584,6 @@ section.b-text-media {
     .swiper-slide {
         display: flex;
         justify-content: center;
-    }
-
-    .slider__gallery .swiper-pagination {
-        display: block;
     }
 }
 
@@ -2634,12 +2631,6 @@ section.b-text-media {
 @media (min-width: 577px) {
     .slider__gallery.swiper {
         --swiper-pagination-bullet-width: 0px;
-    }
-}
-
-@media (max-width: 577px) {
-    .slider__gallery .swiper-pagination {
-        display: block;
     }
 }
 

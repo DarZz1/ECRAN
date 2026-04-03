@@ -1,9 +1,8 @@
-
 const swiper = new Swiper('.gallerySwiper', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 20,
 
     navigation: {
         nextEl: '.swiper-button-next',
@@ -11,30 +10,25 @@ const swiper = new Swiper('.gallerySwiper', {
     },
 
     pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination', // Должно совпадать с классом в HTML
         clickable: true,
     },
 
     breakpoints: {
         0: {
             slidesPerView: 1,
-            spaceBetween: 10,
         },
         577: {
             slidesPerView: 2,
-            spaceBetween: 15,
         },
         768: {
             slidesPerView: 3,
-            spaceBetween: 20,
         },
         992: {
             slidesPerView: 4,
-            spaceBetween: 20,
         },
         1200: {
             slidesPerView: 5,
-            spaceBetween: 20,
         }
     },
 });
