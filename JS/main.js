@@ -39,71 +39,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-const fancySelectors = ["[data-fancybox]", ".button-fancy"];
-
-fancySelectors.forEach(selector => {
-    Fancybox.bind(selector, {
-        on: {
-            init: (fancybox, slide) => {
-            if (
-                !(
-                fancybox.options.$trigger.href &&
-                fancybox.options.$trigger.href.includes("assets/")
-                )
-            ) {
-                fancybox.options.dragToClose = false;
-                fancybox.options.ScrollLock = false;
-                fancybox.options.autoFocus = false;
-            }
-            if (fancybox.options.$trigger.dataset.fancyboxClass) {
-                fancybox.options.mainClass =
-                fancybox.options.$trigger.dataset.fancyboxClass;
-            }
-            },
-        },
-    });
-});
-// добавление # к кнопкам попа через tinymce
-function setHrefFancy() {
-    const btns = document.querySelectorAll('.button-fancy');
-    if (btns.length == 0) return;
-
-    btns.forEach(btn => {
-        const href = btn.getAttribute('href');
-        if (!href) return;
-
-        btn.setAttribute('href', `#${href}`);
-    });
-}
-
-document.addEventListener("DOMContentLoaded", setHrefFancy);
-document.addEventListener("htmx:afterSwap", setHrefFancy);
-
-/** форматирует 10000 в 10 000 и тр... */
-const numFormat = (num) => {
-  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-};
-
-/** анимация чисел */
-const runNumber = (target, number, step = 50, delay = 100, format = false) => {
-  let i = 0;
-  let interval = setInterval(() => {
-    if (number + step > i) {
-      target.innerHTML = format ? numFormat(i) : i;
-      i += step;
-    } else {
-      target.innerHTML = format ? numFormat(number) : number;
-      clearInterval(interval);
-    }
-  }, delay);
-};
-
 /** спойлеры */
 document.addEventListener(
   "click",
   (e) => {
-    if (e.target.closest(".spoiler-title")) {
-      e.target.closest(".spoiler").classList.toggle("is-open");
+    const spoilerTitle = e.target.closest(".spoiler-title");
+    if (spoilerTitle) {
+      const spoiler = spoilerTitle.parentElement.closest(".b-faq__item, .spoiler, .js-spoiler");
+      if (spoiler) {
+        spoiler.classList.toggle("is-open");
+      }
     }
   },
   true
@@ -121,80 +66,3 @@ const accordions = [].map.call(
     );
   })
 );
-
-/** $on */
-const $on = function (event, target, callback) {
-  document.addEventListener(
-    event,
-    (e) => {
-      const el = e.target.closest(target);
-      if (el) {
-        e.preventDefault();
-        callback(el);
-      }
-    },
-    true
-  );
-};
-
-/** Добавление в избранное */
-const navbarFavorites = document.querySelector(".navbar__favorites");
-
-const favoritesAnimation = () => {
-  navbarFavorites.classList.add("_add");
-  setTimeout(() => {
-    navbarFavorites.classList.remove("_add");
-  }, 1000);
-};
-
-const addInFavorites = (id, target) => {
-  const favGetFromCoolies = Cookies.get("favorites");
-  let favorites;
-
-  if (favGetFromCoolies) {
-    favorites = favGetFromCoolies.split(",");
-  } else {
-    favorites = [];
-  }
-
-  if (target.checked) {
-    if (favorites.includes(String(id))) {
-      console.log("Товар уже в избранном");
-    } else {
-      favorites.push(id);
-      favorites = favorites.join(",");
-      Cookies.set("favorites", favorites, { expires: 30 });
-      favoritesAnimation();
-    }
-  } else {
-    if (!favorites.includes(String(id))) {
-      console.log("Удаляемый товар не найден в избранном");
-    } else {
-      favorites = favorites.filter((value) => Number(value) !== id);
-      Cookies.set("favorites", favorites, { expires: 30 });
-    }
-  }
-
-  // изменение иконки "избранное" в блоке navbar
-  if (Cookies.get("favorites")) {
-    navbarFavorites.classList.remove("_empty");
-  } else {
-    navbarFavorites.classList.add("_empty");
-  }
-};
-
-function formCheck() {
-    var checkbox = document.getElementById("checkbox");
-    if (!checkbox) return;
-    var form = checkbox.closest("form");
-
-    checkbox.addEventListener('click', function () {
-        var btn = form.querySelector(".form__box-button");
-        if (checkbox.checked) btn.disabled = false;
-        else btn.disabled = true;
-})
-}
-
-document.addEventListener("DOMContentLoaded", ()=>{
-    formCheck();
-});
