@@ -479,12 +479,20 @@ hr {
 .swiper-wrapper {
     display: flex;
     align-items: stretch;
+
+    @media (max-width: 576px) {
+        margin-bottom: 30px;
+    }
 }
 
 .swiper-slide {
     height: auto;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 576px) {
+        align-items: center;
+    }
 }
 
 .swiper-slide > * {
@@ -2572,7 +2580,6 @@ section.b-text-media {
     .slider__gallery {
         --col: 1;
         margin-bottom: 60px;
-        overflow: visible;
     }
 }
 
@@ -2584,6 +2591,10 @@ section.b-text-media {
     .swiper-slide {
         display: flex;
         justify-content: center;
+    }
+
+    .slider__gallery .swiper-pagination {
+        bottom: 0px;
     }
 }
 
