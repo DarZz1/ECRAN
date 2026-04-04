@@ -55,13 +55,13 @@ document.addEventListener(
 );
 
 /** для плавного раскрытия */
-const accordions = [].map.call(
-  document.querySelectorAll(".js-max-height, .spoiler-content"),
-  (el) => el
+const accordions = Array.from(
+  document.querySelectorAll(".js-max-height, .spoiler-content")
 );
-["load", "resize"].map((event) =>
+
+["load", "resize"].forEach((event) =>
   window.addEventListener(event, () => {
-    accordions.map((el) =>
+    accordions.forEach((el) =>
       el.style.setProperty("--max-height", `${el.scrollHeight}px`)
     );
   })

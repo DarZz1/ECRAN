@@ -62,7 +62,7 @@ const exampleSwiper = new Swiper('.exampleSwiper', {
     },
 });
 
-const partnersSwiper = new Swiper ('.partnersSwiper', {
+const partnersSwiper = new Swiper('.partnersSwiper', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1,
