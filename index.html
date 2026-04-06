@@ -486,14 +486,14 @@
         </div>
     </section>
     
-    <section class="section b-gallery bg-light">
+    <section class="section b-gallery">
         <div class="container">
             <div class="section__header">
                 <h2 class="section__title h1 font-title">Поможем Вашему бизнесу</h2>
                 <div class="section__introtext"></div>
             </div>
         
-            <div class="slider__gallery swiper grid arrow pager gallerySwiper">
+            <div class="slider__gallery swiper arrow pager gallerySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="#" class="slider__gallery-inner">
@@ -631,7 +631,7 @@
         </div>
     </section>
 
-    <section class="section b-text-media bg-light">
+    <section class="section b-text-media">
         <div class="b-text-media__wrapper">
             <div class="container">
                 <div class="about__inner">
@@ -725,7 +725,7 @@
                 <div class="section__introtext"></div>
             </div>
 
-            <div class="example__inner swiper grid arrow pager exampleSwiper">
+            <div class="example__inner swiper arrow pager exampleSwiper">
                 <div class="swiper-wrapper">
                     <div class="example__items swiper-slide">
                         <a class="example__item" href="#">
@@ -848,7 +848,7 @@
         </div>
     </section>
 
-    <section class="section b-partners bg-light">
+    <section class="section b-partners">
         <div class="container">
             <div class="section__header">
                 <h2 class="section__title h1 font-title">Наши партнёры</h2>
@@ -856,7 +856,7 @@
                 <div class="section__introtext"></div>
             </div>
 
-                <div class="b-partners__slider swiper arrow grid pager partnersSwiper">
+                <div class="b-partners__slider swiper arrow pager partnersSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide b-partners__item">
                             <img src="./Image/PARTNERS/kuprit.png" loading="lazy">
@@ -972,7 +972,7 @@
         </div>
     </section>
 
-    <section class="section b-form bg-light">
+    <section class="section b-form">
         <div class="container">
             <div class="section__header">
                 <h2 class="section__title h1 font-title">Заполните форму для обратной связи</h2>
@@ -981,62 +981,60 @@
             </div>
 
             <div class="b-form__inner">
-                <div class="columns">
-                    <form class="b-form__form form">
-                        <div class="b-form__text">
-                            <div class="b-form__text-title">Заполните форму для обратной связи</div>
-                            
-                            <div class="b-form__text-desc">Ответим на все вопросы </div>
-                        </div>
-                                                                    
-                        <div class="form__name-email">
-                            <label class="field">
-                                <input class="input" type="text" name="fullname" value="" placeholder=" " required="">
+                <form class="b-form__form form">
+                    <div class="b-form__text">
+                        <div class="b-form__text-title">Заполните форму для обратной связи</div>
+                        
+                        <div class="b-form__text-desc">Ответим на все вопросы </div>
+                    </div>
+                                                                
+                    <div class="form__name-email">
+                        <label class="field">
+                            <input class="input" type="text" name="fullname" value="" placeholder=" " required="">
 
-                                <div class="field-label">Ваше имя</div>
-                            </label>
-
-                            <label class="field">
-                                <input class="input" type="email" name="email" value="" placeholder=" " required="">
-
-                                <div class="field-label">Ваш email</div>
-                            </label>                    
-                        </div>
+                            <div class="field-label">Ваше имя</div>
+                        </label>
 
                         <label class="field">
-                            <textarea class="input" name="message" placeholder=" " required=""></textarea>
+                            <input class="input" type="email" name="email" value="" placeholder=" " required="">
 
-                            <div class="field-label">Сообщение</div>
-                        </label>   
-
-                        <div class="form-box-footer">
-                            <button class="form__box-button is-fullwidth" type="submit">
-                                Отправить форму
-
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17 8L21 12M21 12L17 16M21 12L3 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg>
-                            </button>
-
-                            <div class="form__footer-checkbox">
-                                <label class="checkbox footer__checkbox">
-                                    <input id="checkbox" name="checkbox" type="checkbox" checked="">
-
-                                    <div class="checkbox__checkmark"></div>
-
-                                    <span class="checkbox__body">
-                                        Даю согласие на обработку
-
-                                        <a href="#">персональных данных</a>
-                                    </span>
-                                </label>
-                            </div>
-                        </div> 
-                    </form>
-            
-                    <div class="b-form__image">
-                        <img src="./Image/FORM/IMAGE1.png">
+                            <div class="field-label">Ваш email</div>
+                        </label>                    
                     </div>
+
+                    <label class="field">
+                        <textarea class="input" name="message" placeholder=" " required=""></textarea>
+
+                        <div class="field-label">Сообщение</div>
+                    </label>   
+
+                    <div class="form-box-footer">
+                        <button class="form__box-button is-fullwidth" type="submit">
+                            Отправить форму
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 8L21 12M21 12L17 16M21 12L3 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+
+                        <div class="form__footer-checkbox">
+                            <label class="checkbox footer__checkbox">
+                                <input id="checkbox" name="checkbox" type="checkbox" checked="">
+
+                                <div class="checkbox__checkmark"></div>
+
+                                <span class="checkbox__body">
+                                    Даю согласие на обработку
+
+                                    <a href="#">персональных данных</a>
+                                </span>
+                            </label>
+                        </div>
+                    </div> 
+                </form>
+        
+                <div class="b-form__image">
+                    <img src="./Image/FORM/IMAGE1.png">
                 </div>
             </div>
         </div>
