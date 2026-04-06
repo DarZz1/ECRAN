@@ -16,473 +16,378 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body class="page">
-    <header class="header">
+    <header class="header" role="banner">
         <div class="container">
             <div class="header__wrapper">
-                <a class="header__logo" href="/" aria-label="Логотип компании Экран">
-                    <img class="header__logo-image" src="./Image/LOGO/LOGO.svg" alt="Логотип Экран" width="224" height="44">
+                <a class="header__logo" href="/" aria-label="На главную">
+                    <img class="header__logo-image" src="./Image/LOGO/LOGO.svg" alt="Логотип компании Экран" width="224" height="44">
                 </a>
-                
                 <div class="header__nav-contacts">
                     <div class="header__contacts">
                         <div class="header__phones">   
-                            <a class="header__phone" href="tel:+78332542770">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <a class="header__phone" href="tel:+78332542770" aria-label="Позвонить по номеру +7 (8332) 54-27-70">
+                                <svg class="header__phone-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                                     <path d="M2.5 4.16667C2.5 3.24619 3.24619 2.5 4.16667 2.5H6.89937C7.25806 2.5 7.57651 2.72953 7.68994 3.06981L8.93811 6.81434C9.06926 7.20777 8.89115 7.63776 8.52022 7.82322L6.63917 8.76375C7.55771 10.801 9.19898 12.4423 11.2363 13.3608L12.1768 11.4798C12.3622 11.1088 12.7922 10.9307 13.1857 11.0619L16.9302 12.3101C17.2705 12.4235 17.5 12.7419 17.5 13.1006V15.8333C17.5 16.7538 16.7538 17.5 15.8333 17.5H15C8.09644 17.5 2.5 11.9036 2.5 5V4.16667Z" stroke="#0088CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg>
                                 <span class="header__phone-text">+7(8332) 54-27-70</span>
                             </a>
-
-                            <a class="header__phone" href="tel:+78332544146">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <a class="header__phone" href="tel:+78332544146" aria-label="Позвонить по номеру +7 (8332) 54-41-46">
+                                <svg class="header__phone-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                                     <path d="M2.5 4.16667C2.5 3.24619 3.24619 2.5 4.16667 2.5H6.89937C7.25806 2.5 7.57651 2.72953 7.68994 3.06981L8.93811 6.81434C9.06926 7.20777 8.89115 7.63776 8.52022 7.82322L6.63917 8.76375C7.55771 10.801 9.19898 12.4423 11.2363 13.3608L12.1768 11.4798C12.3622 11.1088 12.7922 10.9307 13.1857 11.0619L16.9302 12.3101C17.2705 12.4235 17.5 12.7419 17.5 13.1006V15.8333C17.5 16.7538 16.7538 17.5 15.8333 17.5H15C8.09644 17.5 2.5 11.9036 2.5 5V4.16667Z" stroke="#0088CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg>
                                 <span class="header__phone-text">+7(8332) 54-41-46</span>
                             </a>
                         </div>
-                        <div class="header__social">
-                            <a class="header__social-link" href="https://wa.clck.bar/79292911590" target="_blank" rel="nofollow noopener" aria-label="WhatsApp">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <div class="header__social" role="navigation" aria-label="Социальные сети">
+                            <a class="header__social-link" href="https://wa.clck.bar/79292911590 " target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                <svg class="header__social-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                                     <path d="M0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16Z" fill="#25D366"></path>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6001 10.3C20.1001 8.79999 18.1001 7.99999 16.0001 7.99999C11.6001 7.99999 8.00006 11.6 8.00006 16C8.00006 17.4 8.40007 18.8 9.10007 20L8.00006 24L12.2001 22.9C13.4001 23.5 14.7001 23.9 16.0001 23.9C20.4001 23.9 24.0001 20.3 24.0001 15.9C24.0001 13.8 23.1001 11.8 21.6001 10.3ZM16.0001 22.6C14.8001 22.6 13.6001 22.3 12.6001 21.7L12.4001 21.6L9.90006 22.3L10.6001 19.9L10.4001 19.6C9.70006 18.5 9.40006 17.3 9.40006 16.1C9.40006 12.5 12.4001 9.49999 16.0001 9.49999C17.8001 9.49999 19.4001 10.2 20.7001 11.4C22.0001 12.7 22.6001 14.3 22.6001 16.1C22.6001 19.6 19.7001 22.6 16.0001 22.6ZM19.6001 17.6C19.4001 17.5 18.4001 17 18.2001 17C18.0001 16.9 17.9001 16.9 17.8 17.1C17.7001 17.3 17.3001 17.7 17.2001 17.9C17.1001 18 17 18 16.8 18C16.6 17.9 16.0001 17.7 15.2001 17C14.6001 16.5 14.2001 15.8 14.1001 15.6C14.0001 15.4 14.1001 15.3 14.2001 15.2C14.3001 15.1 14.4001 15 14.5001 14.9C14.6001 14.8 14.6001 14.7 14.7001 14.6C14.8001 14.5 14.7001 14.4 14.7001 14.3C14.7001 14.2 14.3001 13.2 14.1001 12.8C14.0001 12.5 13.8001 12.5 13.7001 12.5C13.6001 12.5 13.5 12.5 13.3 12.5C13.2 12.5 13 12.5 12.8 12.7C12.6 12.9 12.1001 13.4 12.1001 14.4C12.1001 15.4 12.8001 16.3 12.9001 16.5C13.0001 16.6 14.3 18.7 16.3 19.5C18 20.2 18.3001 20 18.7001 20C19.1001 20 19.9001 19.5 20.0001 19.1C20.2001 18.6 20.2001 18.2 20.1001 18.2C20.0001 17.7 19.8001 17.7 19.6001 17.6Z" fill="white"></path>
                                 </svg>
                             </a>
-
-                            <a class="header__social-link" href="//t.me/Ekran43" target="_blank" rel="nofollow noopener" aria-label="Telegram">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <a class="header__social-link" href="//t.me/Ekran43" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                                <svg class="header__social-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                                     <path d="M0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16Z" fill="#0088CC"></path>
                                     <path d="M8.09992 15.7083C12.3949 13.8371 15.2589 12.6034 16.6919 12.0074C20.7834 10.3056 21.6335 10.01 22.1877 10.0001C22.3095 9.99809 22.582 10.0283 22.7586 10.1715C22.9076 10.2925 22.9486 10.4558 22.9683 10.5705C22.9879 10.6852 23.0123 10.9464 22.9929 11.1505C22.7712 13.4801 21.8118 19.1335 21.3237 21.7428C21.1172 22.8468 20.7105 23.217 20.3168 23.2532C19.4613 23.332 18.8116 22.6878 17.9829 22.1446C16.6862 21.2946 15.9537 20.7655 14.695 19.936C13.2404 18.9775 14.1834 18.4506 15.0124 17.5896C15.2293 17.3643 18.999 13.9355 19.0719 13.6244C19.0811 13.5855 19.0895 13.4405 19.0034 13.364C18.9172 13.2874 18.7901 13.3136 18.6983 13.3344C18.5683 13.3639 16.4968 14.7331 12.4839 17.4419C11.8959 17.8457 11.3633 18.0424 10.8862 18.0321C10.3601 18.0207 9.34822 17.7347 8.59598 17.4901C7.67333 17.1902 6.94002 17.0317 7.00388 16.5223C7.03714 16.257 7.40248 15.9857 8.09992 15.7083Z" fill="white"></path>
                                 </svg>
                             </a>
                         </div>
                     </div>
-
                     <nav class="header__nav" aria-label="Основное меню">
                         <ul class="header__nav-list">
-                            <li class="header__nav-item">
-                                <a class="header__nav-link" href="#">Наши услуги</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a class="header__nav-link" href="#">Тахография</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a class="header__nav-link" href="#">Решения</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a class="header__nav-link" href="#">Примеры работ</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a class="header__nav-link" href="#">Сертификаты</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a class="header__nav-link" href="#">ЭРА ГЛОНАСС</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a class="header__nav-link" href="#">Контакты</a>
-                            </li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#services">Наши услуги</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#tachography">Тахография</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#solutions">Решения</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#portfolio">Примеры работ</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#certificates">Сертификаты</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#era-glonass">ЭРА ГЛОНАСС</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#contacts">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
-
-                <div class="header__controls">
-                    <div class="header__button">
-                        <span class="header__button-text">Вход в мониторинг</span>
-
-                        <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="navbar__controls">
+                    <button 
+                        type="button" 
+                        class="navbar__button" 
+                        aria-expanded="false" 
+                        aria-controls="login-dropdown-list"
+                        id="login-toggle-btn"
+                    >
+                        <span class="navbar__button-text">Вход в мониторинг</span>
+                        <svg class="navbar__button-icon" width="20" height="10" viewBox="0 0 20 10" fill="none" aria-hidden="true">
                             <path d="M15 1L19 5M19 5L15 9M19 5L1 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
-                    </div>
+                    </button>
 
-                    <div class="header__logins">
-                        <a href="#" class="header__login button">
-                            <span>Платформа</span>
-
-                            <img src="./Image/LOGO/axenta.svg" style="height:40px;" alt="">
-                        </a>
-
-                        <a href="#" class="header__login button">
-                            <span>Платформа</span>
-
-                            <img src="./Image/LOGO/winlon.svg" style="height:40px;" alt="">
-
-                            <span>Wialon</span>
-                        </a>
-
-                        <a href="#" class="header__login button">
-                            <span>Платформа</span>
-
-                            <span>АО ГЛОНАСС</span>
-                        </a>
-
-                        <a href="#" class="header__login button">
-                            <span>Платформа</span>
-
-                            <img src="./Image/LOGO/globars-logo.png" style="height:40px;" alt="">
-
-                            <span>GLOBARS</span>
-                        </a>
+                    <div id="login-dropdown-list" class="navbar__logins" hidden>
+                        <ul class="navbar__logins-list">
+                            <li class="navbar__login-item">
+                                <a href="https://axenta.cloud/auth/login " class="navbar__login button" rel="noopener noreferrer" target="_blank">
+                                    <span class="visually-hidden">Платформа</span>
+                                    <img src="./Image/LOGO/axenta.svg" width="40" height="40" alt="Axenta">
+                                </a>
+                            </li>
+                            <li class="navbar__login-item">
+                                <a href="https://web1.wiapro.ru/?lang=ru" class="navbar__login button" rel="noopener noreferrer" target="_blank">
+                                    <span class="visually-hidden">Платформа</span>
+                                    <img src="./Image/LOGO/winlon.svg" width="40" height="40" alt="Wialon">
+                                    <span class="navbar__login-name">Wialon</span>
+                                </a>
+                            </li>
+                            <li class="navbar__login-item">
+                                <a href=" https://monitoring.aoglonass.ru/ " class="navbar__login button" rel="noopener noreferrer" target="_blank">
+                                    <span class="visually-hidden">Платформа</span>
+                                    <span class="navbar__login-name">АО ГЛОНАСС</span>
+                                </a>
+                            </li>
+                            <li class="navbar__login-item">
+                                <a href="https://go2.globars.ru/login " class="navbar__login button" rel="noopener noreferrer" target="_blank">
+                                    <span class="visually-hidden">Платформа</span>
+                                    <img src="./Image/LOGO/globars-logo.png" width="40" height="40" alt="GLOBARS">
+                                    <span class="navbar__login-name">GLOBARS</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="navbar">
+    <nav class="navbar" aria-label="Мобильная навигация">
         <div class="navbar__row container">
-            <button class="navbar__burger" data-src="#navbar__mobile" data-fancybox-class="navbar__mobile" data-fancybox="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <button type="button" class="navbar__burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="navbar__mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="navbar__burger-icon" viewBox="0 0 16 16" aria-hidden="true">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
                 </svg>
             </button>
-
             <a href="/" class="navbar__logo">
-                <img src="./Image/LOGO/LOGO.svg" alt="" width="224" height="44">
+                <img src="./Image/LOGO/LOGO.svg" alt="Главная страница" width="224" height="44">
             </a>
-
-            <div class="header__controls">
-                <div class="header__button navbar__button">
-                    <span class="header__button-text navbar__button-text">Вход в мониторинг</span>
-
-                    <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="navbar__controls">
+                <button type="button" class="navbar__button" aria-expanded="false" aria-controls="login-dropdown-list-mobile" id="login-toggle-btn-mobile">
+                    <span class="navbar__button-text">Вход</span>
+                    <svg class="navbar__button-icon" width="20" height="10" viewBox="0 0 20 10" fill="none" aria-hidden="true">
                         <path d="M15 1L19 5M19 5L15 9M19 5L1 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
-                </div>
-
-                <div class="header__logins">
-                    <a href="https://axenta.cloud/auth/login" class="header__login button">
-                        <span>Платформа</span>
-                        <img src="./Image/LOGO/axenta.svg" style="height:40px;" alt="">
-                    </a>
-
-                    <a href="https://web1.wiapro.ru/?lang=ru" class="header__login button">
-                        <span>Платформа</span>
-                        <img src="./Image/LOGO/winlon.svg" style="height:40px;" alt="">
-                        <span>Wialon</span>
-                    </a>
-
-                    <a href="https://monitoring.aoglonass.ru/" class="header__login button">
-                        <span>Платформа</span>
-                        <span>АО ГЛОНАСС</span>
-                    </a>
-
-                    <a href="https://go2.globars.ru/login" class="header__login button">
-                        <span>Платформа</span>
-                        <img src="./Image/LOGO/globars-logo.png" style="height:40px;" alt="">
-                        <span>GLOBARS</span>
-                    </a>
+                </button>
+                <div id="login-dropdown-list-mobile" class="navbar__logins" hidden>
+                    <ul class="navbar__logins-list">
+                        <li class="navbar__login-item"><a href="https://axenta.cloud/auth/login " class="navbar__login button" rel="noopener noreferrer" target="_blank"><img src="./Image/LOGO/axenta.svg" width="40" height="40" alt="Axenta"></a></li>
+                        <li class="navbar__login-item"><a href="https://web1.wiapro.ru/?lang=ru" class="navbar__login button" rel="noopener noreferrer" target="_blank"><img src="./Image/LOGO/winlon.svg" width="40" height="40" alt="Wialon"><span class="navbar__login-name">Wialon</span></a></li>
+                        <li class="navbar__login-item"><a href=" https://monitoring.aoglonass.ru/ " class="navbar__login button" rel="noopener noreferrer" target="_blank"><span class="navbar__login-name">АО ГЛОНАСС</span></a></li>
+                        <li class="navbar__login-item"><a href="https://go2.globars.ru/login " class="navbar__login button" rel="noopener noreferrer" target="_blank"><img src="./Image/LOGO/globars-logo.png" width="40" height="40" alt="GLOBARS"><span class="navbar__login-name">GLOBARS</span></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="navbar__mobile-inner">
-        <a href="/" class="navbar__mobile-logo">
-            <img src="./Image/LOGO/LOGO.svg" alt="" width="128" height="34">
-        </a>
-
-        <ul class="navbar__mobile-menu">
-            <li class="first navbar__menu-lvl-1"><a class="navbar__menu-link" href="catalog">Наши услуги</a></li><li class="navbar__menu-lvl-1"><a class="navbar__menu-link" href="tahografy-i-karty">Тахография</a></li><li class="navbar__menu-lvl-1"><a class="navbar__menu-link" href="pomozhem-vashemu-biznesu">Решения</a></li><li class="navbar__menu-lvl-1"><a class="navbar__menu-link" href="primery-ispolzovaniya">Примеры работ</a></li><li class="navbar__menu-lvl-1"><a class="navbar__menu-link" href="sertifikaty2">Сертификаты</a></li><li class="navbar__menu-lvl-1"><a class="navbar__menu-link" href="era-glonass">ЭРА ГЛОНАСС</a></li><li class="last navbar__menu-lvl-1"><a class="navbar__menu-link" href="kontakty">Контакты</a></li>
-        </ul>
         
-        <div class="navbar__phone-social">
-            <div class="navbar__phone">
-                <a class="navbar__mobile-phone" target="_blank" href="tel:+78332542770">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.5 4.16667C2.5 3.24619 3.24619 2.5 4.16667 2.5H6.89937C7.25806 2.5 7.57651 2.72953 7.68994 3.06981L8.93811 6.81434C9.06926 7.20777 8.89115 7.63776 8.52022 7.82322L6.63917 8.76375C7.55771 10.801 9.19898 12.4423 11.2363 13.3608L12.1768 11.4798C12.3622 11.1088 12.7922 10.9307 13.1857 11.0619L16.9302 12.3101C17.2705 12.4235 17.5 12.7419 17.5 13.1006V15.8333C17.5 16.7538 16.7538 17.5 15.8333 17.5H15C8.09644 17.5 2.5 11.9036 2.5 5V4.16667Z" stroke="#0088CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-
-                    <span>+7(8332) 54-27-70</span>
+        <div id="navbar__mobile" class="navbar__mobile-inner" hidden>
+            <div class="container">
+                <a href="/" class="navbar__mobile-logo">
+                    <img src="./Image/LOGO/LOGO.svg" alt="Главная" width="128" height="34">
                 </a>
-
-                <a class="navbar__mobile-phone" target="_blank" href="tel:+78332544146">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.5 4.16667C2.5 3.24619 3.24619 2.5 4.16667 2.5H6.89937C7.25806 2.5 7.57651 2.72953 7.68994 3.06981L8.93811 6.81434C9.06926 7.20777 8.89115 7.63776 8.52022 7.82322L6.63917 8.76375C7.55771 10.801 9.19898 12.4423 11.2363 13.3608L12.1768 11.4798C12.3622 11.1088 12.7922 10.9307 13.1857 11.0619L16.9302 12.3101C17.2705 12.4235 17.5 12.7419 17.5 13.1006V15.8333C17.5 16.7538 16.7538 17.5 15.8333 17.5H15C8.09644 17.5 2.5 11.9036 2.5 5V4.16667Z" stroke="#0088CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-
-                    <span>+7(8332) 54-41-46</span>
-                </a>
-            </div>
-
-            <div class="navbar__mobile-soc">
-                <a class="navbar__social-link" href="https://wa.clck.bar/79292911590" target="_blank" rel="nofollow noopener">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16Z" fill="#25D366"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6001 10.3C20.1001 8.79999 18.1001 7.99999 16.0001 7.99999C11.6001 7.99999 8.00006 11.6 8.00006 16C8.00006 17.4 8.40007 18.8 9.10007 20L8.00006 24L12.2001 22.9C13.4001 23.5 14.7001 23.9 16.0001 23.9C20.4001 23.9 24.0001 20.3 24.0001 15.9C24.0001 13.8 23.1001 11.8 21.6001 10.3ZM16.0001 22.6C14.8001 22.6 13.6001 22.3 12.6001 21.7L12.4001 21.6L9.90006 22.3L10.6001 19.9L10.4001 19.6C9.70006 18.5 9.40006 17.3 9.40006 16.1C9.40006 12.5 12.4001 9.49999 16.0001 9.49999C17.8001 9.49999 19.4001 10.2 20.7001 11.4C22.0001 12.7 22.6001 14.3 22.6001 16.1C22.6001 19.6 19.7001 22.6 16.0001 22.6ZM19.6001 17.6C19.4001 17.5 18.4001 17 18.2001 17C18.0001 16.9 17.9001 16.9 17.8 17.1C17.7001 17.3 17.3001 17.7 17.2001 17.9C17.1001 18 17 18 16.8 18C16.6 17.9 16.0001 17.7 15.2001 17C14.6001 16.5 14.2001 15.8 14.1001 15.6C14.0001 15.4 14.1001 15.3 14.2001 15.2C14.3001 15.1 14.4001 15 14.5001 14.9C14.6001 14.8 14.6001 14.7 14.7001 14.6C14.8001 14.5 14.7001 14.4 14.7001 14.3C14.7001 14.2 14.3001 13.2 14.1001 12.8C14.0001 12.5 13.8001 12.5 13.7001 12.5C13.6001 12.5 13.5 12.5 13.3 12.5C13.2 12.5 13 12.5 12.8 12.7C12.6 12.9 12.1001 13.4 12.1001 14.4C12.1001 15.4 12.8001 16.3 12.9001 16.5C13.0001 16.6 14.3 18.7 16.3 19.5C18 20.2 18.3001 20 18.7001 20C19.1001 20 19.9001 19.5 20.0001 19.1C20.2001 18.6 20.2001 18.2 20.1001 18.2C20.0001 17.7 19.8001 17.7 19.6001 17.6Z" fill="white"></path>
-                    </svg>
-                </a>
-
-                <a class="navbar__social-link" href="//t.me/Ekran43" target="_blank" rel="nofollow noopener">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16Z" fill="#0088CC"></path>
-                        <path d="M8.09992 15.7083C12.3949 13.8371 15.2589 12.6034 16.6919 12.0074C20.7834 10.3056 21.6335 10.01 22.1877 10.0001C22.3095 9.99809 22.582 10.0283 22.7586 10.1715C22.9076 10.2925 22.9486 10.4558 22.9683 10.5705C22.9879 10.6852 23.0123 10.9464 22.9929 11.1505C22.7712 13.4801 21.8118 19.1335 21.3237 21.7428C21.1172 22.8468 20.7105 23.217 20.3168 23.2532C19.4613 23.332 18.8116 22.6878 17.9829 22.1446C16.6862 21.2946 15.9537 20.7655 14.695 19.936C13.2404 18.9775 14.1834 18.4506 15.0124 17.5896C15.2293 17.3643 18.999 13.9355 19.0719 13.6244C19.0811 13.5855 19.0895 13.4405 19.0034 13.364C18.9172 13.2874 18.7901 13.3136 18.6983 13.3344C18.5683 13.3639 16.4968 14.7331 12.4839 17.4419C11.8959 17.8457 11.3633 18.0424 10.8862 18.0321C10.3601 18.0207 9.34822 17.7347 8.59598 17.4901C7.67333 17.1902 6.94002 17.0317 7.00388 16.5223C7.03714 16.257 7.40248 15.9857 8.09992 15.7083Z" fill="white"></path>
-                    </svg>
-                </a>
+                <nav aria-label="Мобильное меню">
+                    <ul class="navbar__mobile-menu">
+                        <li class="navbar__menu-lvl-1"><a class="navbar__menu-link" href="#services">Наши услуги</a></li>
+                        <li class="navbar__menu-lvl-1"><a class="navbar__menu-link" href="#tachography">Тахография</a></li>
+                        <li class="navbar__menu-lvl-1"><a class="navbar__menu-link" href="#solutions">Решения</a></li>
+                        <li class="navbar__menu-lvl-1"><a class="navbar__menu-link" href="#portfolio">Примеры работ</a></li>
+                        <li class="navbar__menu-lvl-1"><a class="navbar__menu-link" href="#certificates">Сертификаты</a></li>
+                        <li class="navbar__menu-lvl-1"><a class="navbar__menu-link" href="#era-glonass">ЭРА ГЛОНАСС</a></li>
+                        <li class="navbar__menu-lvl-1"><a class="navbar__menu-link" href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar__phone-social">
+                    <div class="navbar__phone">
+                        <a class="navbar__mobile-phone" href="tel:+78332542770">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2.5 4.16667C2.5 3.24619 3.24619 2.5 4.16667 2.5H6.89937C7.25806 2.5 7.57651 2.72953 7.68994 3.06981L8.93811 6.81434C9.06926 7.20777 8.89115 7.63776 8.52022 7.82322L6.63917 8.76375C7.55771 10.801 9.19898 12.4423 11.2363 13.3608L12.1768 11.4798C12.3622 11.1088 12.7922 10.9307 13.1857 11.0619L16.9302 12.3101C17.2705 12.4235 17.5 12.7419 17.5 13.1006V15.8333C17.5 16.7538 16.7538 17.5 15.8333 17.5H15C8.09644 17.5 2.5 11.9036 2.5 5V4.16667Z" stroke="#0088CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            <span>+7(8332) 54-27-70</span>
+                        </a>
+                        <a class="navbar__mobile-phone" href="tel:+78332544146">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2.5 4.16667C2.5 3.24619 3.24619 2.5 4.16667 2.5H6.89937C7.25806 2.5 7.57651 2.72953 7.68994 3.06981L8.93811 6.81434C9.06926 7.20777 8.89115 7.63776 8.52022 7.82322L6.63917 8.76375C7.55771 10.801 9.19898 12.4423 11.2363 13.3608L12.1768 11.4798C12.3622 11.1088 12.7922 10.9307 13.1857 11.0619L16.9302 12.3101C17.2705 12.4235 17.5 12.7419 17.5 13.1006V15.8333C17.5 16.7538 16.7538 17.5 15.8333 17.5H15C8.09644 17.5 2.5 11.9036 2.5 5V4.16667Z" stroke="#0088CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            <span>+7(8332) 54-41-46</span>
+                        </a>
+                    </div>
+                    <div class="navbar__mobile-soc">
+                        <a class="navbar__social-link" href="https://wa.clck.bar/79292911590 " target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16Z" fill="#25D366"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M21.6001 10.3C20.1001 8.79999 18.1001 7.99999 16.0001 7.99999C11.6001 7.99999 8.00006 11.6 8.00006 16C8.00006 17.4 8.40007 18.8 9.10007 20L8.00006 24L12.2001 22.9C13.4001 23.5 14.7001 23.9 16.0001 23.9C20.4001 23.9 24.0001 20.3 24.0001 15.9C24.0001 13.8 23.1001 11.8 21.6001 10.3ZM16.0001 22.6C14.8001 22.6 13.6001 22.3 12.6001 21.7L12.4001 21.6L9.90006 22.3L10.6001 19.9L10.4001 19.6C9.70006 18.5 9.40006 17.3 9.40006 16.1C9.40006 12.5 12.4001 9.49999 16.0001 9.49999C17.8001 9.49999 19.4001 10.2 20.7001 11.4C22.0001 12.7 22.6001 14.3 22.6001 16.1C22.6001 19.6 19.7001 22.6 16.0001 22.6ZM19.6001 17.6C19.4001 17.5 18.4001 17 18.2001 17C18.0001 16.9 17.9001 16.9 17.8 17.1C17.7001 17.3 17.3001 17.7 17.2001 17.9C17.1001 18 17 18 16.8 18C16.6 17.9 16.0001 17.7 15.2001 17C14.6001 16.5 14.2001 15.8 14.1001 15.6C14.0001 15.4 14.1001 15.3 14.2001 15.2C14.3001 15.1 14.4001 15 14.5001 14.9C14.6001 14.8 14.6001 14.7 14.7001 14.6C14.8001 14.5 14.7001 14.4 14.7001 14.3C14.7001 14.2 14.3001 13.2 14.1001 12.8C14.0001 12.5 13.8001 12.5 13.7001 12.5C13.6001 12.5 13.5 12.5 13.3 12.5C13.2 12.5 13 12.5 12.8 12.7C12.6 12.9 12.1001 13.4 12.1001 14.4C12.1001 15.4 12.8001 16.3 12.9001 16.5C13.0001 16.6 14.3 18.7 16.3 19.5C18 20.2 18.3001 20 18.7001 20C19.1001 20 19.9001 19.5 20.0001 19.1C20.2001 18.6 20.2001 18.2 20.1001 18.2C20.0001 17.7 19.8001 17.7 19.6001 17.6Z" fill="white"></path></svg>
+                        </a>
+                        <a class="navbar__social-link" href="//t.me/Ekran43" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16Z" fill="#0088CC"></path><path d="M8.09992 15.7083C12.3949 13.8371 15.2589 12.6034 16.6919 12.0074C20.7834 10.3056 21.6335 10.01 22.1877 10.0001C22.3095 9.99809 22.582 10.0283 22.7586 10.1715C22.9076 10.2925 22.9486 10.4558 22.9683 10.5705C22.9879 10.6852 23.0123 10.9464 22.9929 11.1505C22.7712 13.4801 21.8118 19.1335 21.3237 21.7428C21.1172 22.8468 20.7105 23.217 20.3168 23.2532C19.4613 23.332 18.8116 22.6878 17.9829 22.1446C16.6862 21.2946 15.9537 20.7655 14.695 19.936C13.2404 18.9775 14.1834 18.4506 15.0124 17.5896C15.2293 17.3643 18.999 13.9355 19.0719 13.6244C19.0811 13.5855 19.0895 13.4405 19.0034 13.364C18.9172 13.2874 18.7901 13.3136 18.6983 13.3344C18.5683 13.3639 16.4968 14.7331 12.4839 17.4419C11.8959 17.8457 11.3633 18.0424 10.8862 18.0321C10.3601 18.0207 9.34822 17.7347 8.59598 17.4901C7.67333 17.1902 6.94002 17.0317 7.00388 16.5223C7.03714 16.257 7.40248 15.9857 8.09992 15.7083Z" fill="white"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar__controls navbar__controls--mobile-menu">
+                    <button type="button" class="navbar__button" aria-expanded="false" aria-controls="login-dropdown-list-mobile-menu">
+                        <span class="navbar__button-text">Вход в мониторинг</span>
+                        <svg class="navbar__button-icon" width="20" height="10" viewBox="0 0 20 10" fill="none" aria-hidden="true"><path d="M15 1L19 5M19 5L15 9M19 5L1 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </button>
+                    <div id="login-dropdown-list-mobile-menu" class="navbar__logins" hidden>
+                        <ul class="navbar__logins-list">
+                            <li class="navbar__login-item"><a href="https://axenta.cloud/auth/login " class="navbar__login button" rel="noopener noreferrer" target="_blank"><img src="./Image/LOGO/axenta.svg" width="40" height="40" alt="Axenta"></a></li>
+                            <li class="navbar__login-item"><a href="https://web1.wiapro.ru/?lang=ru" class="navbar__login button" rel="noopener noreferrer" target="_blank"><img src="./Image/LOGO/winlon.svg" width="40" height="40" alt="Wialon"><span class="navbar__login-name">Wialon</span></a></li>
+                            <li class="navbar__login-item"><a href=" https://monitoring.aoglonass.ru/ " class="navbar__login button" rel="noopener noreferrer" target="_blank"><span class="navbar__login-name">АО ГЛОНАСС</span></a></li>
+                            <li class="navbar__login-item"><a href="https://go2.globars.ru/login " class="navbar__login button" rel="noopener noreferrer" target="_blank"><img src="./Image/LOGO/globars-logo.png" width="40" height="40" alt="GLOBARS"><span class="navbar__login-name">GLOBARS</span></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <div class="header__controls">
-            <div class="header__button navbar__button">
-                <span class="header__button-text navbar__button-text">Вход в мониторинг</span>
+    </nav>       
 
-                <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 1L19 5M19 5L15 9M19 5L1 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-            </div>
-
-            <div class="header__logins">
-                <a href="https://axenta.cloud/auth/login" class="header__login button">
-                    <span>Платформа</span>
-
-                    <img src="./Image/LOGO/axenta.svg" style="height:40px;" alt="">
-                </a>
-
-                <a href="https://web1.wiapro.ru/?lang=ru" class="header__login button">
-                    <span>Платформа</span>
-
-                    <img src="./Image/LOGO/winlon.svg" style="height:40px;" alt="">
-
-                    <span>Wialon</span>
-                </a>
-
-                <a href="https://monitoring.aoglonass.ru/" class="header__login button">
-                    <span>Платформа</span>
-
-                    <span>АО ГЛОНАСС</span>
-                </a>
-
-                <a href="https://go2.globars.ru/login" class="header__login button">
-                    <span>Платформа</span>
-
-                    <img src="./Image/LOGO/globars-logo.png" style="height:40px;" alt="">
-
-                    <span>GLOBARS</span>
-                </a>
-            </div>
-        </div>
-    </div>        
-
-    <section class="section b-hero">
+    <section class="section b-hero" aria-labelledby="hero-title">
         <div class="container">
-            <div class="b-hero__inner">
+            <div class="b-hero__wrapper">
                 <div class="b-hero__content">
-                    <div class="b-hero__title font-title h2">Поможем сделать бизнес прибыльнее!</div>
-
-                    <div class="b-hero__text">Выполняем нормы законодательства в сфере тахографии с 2010 года!</div>
-                    
-                    <a href="#modal-callback" class="button">
-                        <span>Получить консультацию</span>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <h1 id="hero-title" class="b-hero__title font-title">
+                        Поможем сделать бизнес прибыльнее!
+                    </h1>
+                    <p class="b-hero__description">
+                        Выполняем нормы законодательства в сфере тахографии с 2010 года!
+                    </p>
+                    <a href="#modal-callback" class="b-hero__button button">
+                        <span class="b-hero__button-text">Получить консультацию</span>
+                        <svg class="b-hero__button-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path d="M17 8L21 12M21 12L17 16M21 12L3 12" stroke="#545F71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M17 8L21 12M21 12L17 16M21 12L3 12" stroke="#2D333D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
-                    </a>   
+                    </a>
                 </div>
-
-                <div class="b-hero__img">
-                    <img src="./Image/HERO/hero.png" alt="">
+                <div class="b-hero__image-wrapper">
+                    <img class="b-hero__image" src="./Image/HERO/hero.png" alt="Специалист по тахографии за работой" width="800" height="600">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section b-advantages">
+    <section class="section b-advantages" aria-labelledby="advantages-heading">
+        <h2 id="advantages-heading" class="visually-hidden">Наши преимущества</h2>
         <div class="container">
-            <div class="b-advantages__items">
-                <div class="b-advantages__item">
-                    <div class="b-advantages__item-image">
+            <ul class="b-advantages__list">
+                <li class="b-advantages__item">
+                    <div class="b-advantages__item-icon" aria-hidden="true">
                         <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M72 36C72 55.8823 55.8823 72 36 72C16.1177 72 0 55.8823 0 36C0 16.1177 16.1177 0 36 0C55.8823 0 72 16.1177 72 36ZM10.08 36C10.08 50.3152 21.6848 61.92 36 61.92C50.3152 61.92 61.92 50.3152 61.92 36C61.92 21.6848 50.3152 10.08 36 10.08C21.6848 10.08 10.08 21.6848 10.08 36Z" fill="#E8E9F4" fill-opacity="0.8"></path>
                             <path d="M36 5.04C36 2.25648 38.2673 -0.0361972 41.0236 0.352229C44.0237 0.775011 46.9651 1.57577 49.7766 2.74034C54.1443 4.54951 58.1129 7.20125 61.4558 10.5442C64.7988 13.8871 67.4505 17.8557 69.2597 22.2234C70.4242 25.0349 71.225 27.9763 71.6478 30.9764C72.0362 33.7327 69.7435 36 66.96 36C64.1765 36 61.9694 33.7227 61.4315 30.9917C61.1011 29.3137 60.6046 27.6685 59.947 26.0808C58.6444 22.9361 56.7351 20.0787 54.3282 17.6718C51.9213 15.2649 49.0639 13.3556 45.9192 12.053C44.3315 11.3954 42.6863 10.8989 41.0083 10.5685C38.2773 10.0306 36 7.82351 36 5.04Z" fill="#0088CC"></path>
-                        </svg>                    
+                        </svg>
                     </div>
-                    
-                    <div class="b-advantages__item-text">
-                        <div class="b-advantages__item-title">
-                            <b>до 25%</b>
+                    <div class="b-advantages__item-content">
+                        <div class="b-advantages__item-value">
+                            <span>до 25%</span>
                         </div>
-                        
-                        <div class="b-advantages__item-description">Снижение эксплуатационных расходов</div>
+                        <p class="b-advantages__item-label">Снижение эксплуатационных расходов</p>
                     </div>
-                </div>
-
-                <div class="b-advantages__item">
-                    <div class="b-advantages__item-image">
+                </li>
+                <li class="b-advantages__item">
+                    <div class="b-advantages__item-icon" aria-hidden="true">
                         <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M72 36C72 55.8823 55.8823 72 36 72C16.1177 72 0 55.8823 0 36C0 16.1177 16.1177 0 36 0C55.8823 0 72 16.1177 72 36ZM10.08 36C10.08 50.3152 21.6848 61.92 36 61.92C50.3152 61.92 61.92 50.3152 61.92 36C61.92 21.6848 50.3152 10.08 36 10.08C21.6848 10.08 10.08 21.6848 10.08 36Z" fill="#E8E9F4" fill-opacity="0.8"></path>
                             <path d="M36 5.04C36 2.25648 38.2675 -0.0362832 41.0238 0.352122C48.6205 1.42261 55.7255 4.90156 61.2551 10.345C67.9895 16.9744 71.8471 25.9859 71.9956 35.4345C72.144 44.8832 68.5713 54.0114 62.0485 60.8491C55.5257 67.6867 46.576 71.6854 37.1308 71.9822C27.6856 72.2791 18.5024 68.8502 11.5632 62.4356C4.62392 56.021 0.485108 47.1352 0.0399637 37.6958C-0.405181 28.2564 2.87904 19.0205 9.18383 11.9814C14.3608 6.20149 21.2333 2.28328 28.7478 0.737908C31.4742 0.177203 33.8812 2.32307 34.056 5.10109C34.2308 7.87911 32.0965 10.2247 29.4046 10.933C24.5328 12.2149 20.1018 14.9 16.6924 18.7066C12.1529 23.7748 9.78827 30.4246 10.1088 37.221C10.4293 44.0173 13.4092 50.4151 18.4055 55.0336C23.4017 59.6521 30.0136 62.1209 36.8142 61.9072C43.6147 61.6935 50.0585 58.8144 54.7549 53.8913C59.4513 48.9682 62.0237 42.3959 61.9168 35.5929C61.8099 28.7898 59.0324 22.3016 54.1837 17.5284C50.5419 13.9434 45.9511 11.5418 41.0084 10.5684C38.2774 10.0305 36 7.82351 36 5.04Z" fill="#0088CC"></path>
-                        </svg>                    
+                        </svg>
                     </div>
-                    
-                    <div class="b-advantages__item-text">
-                        <div class="b-advantages__item-title">
-                            <b>99,9%</b>
+                    <div class="b-advantages__item-content">
+                        <div class="b-advantages__item-value">
+                            <span>99,9%</span>
                         </div>
-                        
-                        <div class="b-advantages__item-description">Обнаружение сливов топлива</div>
+                        <p class="b-advantages__item-label">Обнаружение сливов топлива</p>
                     </div>
-                </div>
-
-                <div class="b-advantages__item">
-                    <div class="b-advantages__item-image">
+                </li>
+                <li class="b-advantages__item">
+                    <div class="b-advantages__item-icon" aria-hidden="true">
                         <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M72 36C72 55.8823 55.8823 72 36 72C16.1177 72 0 55.8823 0 36C0 16.1177 16.1177 0 36 0C55.8823 0 72 16.1177 72 36ZM10.08 36C10.08 50.3152 21.6848 61.92 36 61.92C50.3152 61.92 61.92 50.3152 61.92 36C61.92 21.6848 50.3152 10.08 36 10.08C21.6848 10.08 10.08 21.6848 10.08 36Z" fill="#E8E9F4" fill-opacity="0.8"></path>
                             <path d="M36 5.04C36 2.25648 38.2674 -0.0362328 41.0237 0.352199C46.8299 1.17045 52.3754 3.39899 57.1603 6.87539C63.3108 11.344 67.8887 17.645 70.238 24.8754C72.5873 32.1058 72.5873 39.8943 70.238 47.1246C68.4104 52.7495 65.2339 57.812 61.0175 61.8868C59.0159 63.8212 55.8339 63.2991 54.1978 61.0472C52.5617 58.7953 53.1068 55.6711 55.0002 53.6307C57.5465 50.8865 59.4823 47.6079 60.6514 44.0097C62.3429 38.8039 62.3429 33.1961 60.6514 27.9903C58.9599 22.7844 55.6638 18.2477 51.2354 15.0303C48.1746 12.8065 44.6814 11.2918 41.0084 10.5685C38.2773 10.0306 36 7.82351 36 5.04Z" fill="#0088CC"></path>
-                        </svg>                        
+                        </svg>
                     </div>
-                    
-                    <div class="b-advantages__item-text">
-                        <div class="b-advantages__item-title">
-                            <b>до 40%</b>
+                    <div class="b-advantages__item-content">
+                        <div class="b-advantages__item-value">
+                            <span>до 40%</span>
                         </div>
-                        
-                        <div class="b-advantages__item-description">Снижение пробега автопарка</div>
+                        <p class="b-advantages__item-label">Снижение пробега автопарка</p>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </section>
                                                                                                                     
-    <section class="section b-categories">
+    <section class="section b-categories" aria-labelledby="categories-title">
         <div class="container">
-            <div class="section__header">
-                <h2 class="section__title h1 font-title">Наши услуги</h2>
-
-                <a href="#" class="services__link">
-                    Смотреть все услуги
-
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="b-categories__head">
+                <h2 id="categories-title" class="b-categories__title h1 font-title">Наши услуги</h2>
+                <a href="#" class="b-categories__all-link">
+                    <span class="b-categories__all-text">Смотреть все услуги</span>
+                    <svg class="b-categories__all-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path d="M12.6667 6L8.00004 10.6667L3.33337 6" stroke="#545F71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                 </a>
             </div>
-             
-            <div class="services">
-                <div class="services__card ">
-                    <a href="#" class="services__card-link">
-                        <div class="services__card-text">
-                            <div class="card__text-title">Установка и калибровка цифровых тахографов</div>
-
-                            <div class="card__text-desc">Подойдет для любого транспорта</div>
+            
+            <ul class="b-categories__list">
+                <li class="b-categories__item">
+                    <a href="#" class="b-categories__card">
+                        <div class="b-categories__card-content">
+                            <h3 class="b-categories__card-title">Установка и калибровка цифровых тахографов</h3>
+                            <p class="b-categories__card-desc">Подойдет для любого транспорта</p>
                         </div>
-
-                        <div class="services__card-image">
-                            <img src="./Image/CATEGORIES/IMAGE1.png">
+                        <div class="b-categories__card-media">
+                            <img class="b-categories__card-img" src="./Image/CATEGORIES/IMAGE1.png" alt="" width="200" height="150">
                         </div> 
                     </a>      
-                </div>
+                </li>
 
-                <div class="services__card ">
-                    <a href="#" class="services__card-link">
-                        <div class="services__card-text">
-                            <div class="card__text-title">Спутниковый мониторинг транспорта</div>
-
-                            <div class="card__text-desc">Снижение эксплуатационных расходов</div>
+                <li class="b-categories__item">
+                    <a href="#" class="b-categories__card">
+                        <div class="b-categories__card-content">
+                            <h3 class="b-categories__card-title">Спутниковый мониторинг транспорта</h3>
+                            <p class="b-categories__card-desc">Снижение эксплуатационных расходов</p>
                         </div>
-
-                        <div class="services__card-image">
-                            <img src="./Image/CATEGORIES/IMAGE2.png">
+                        <div class="b-categories__card-media">
+                            <img class="b-categories__card-img" src="./Image/CATEGORIES/IMAGE2.png" alt="" width="200" height="150">
                         </div> 
                     </a>
-                </div>
+                </li>
 
-                <div class="services__card ">
-                    <a href="#" class="services__card-link">
-                        <div class="services__card-text">
-                            <div class="card__text-title">Установка датчиков</div>
-
-                            <div class="card__text-desc">Для&nbsp;решения любых задач транспортных предприятий</div>
+                <li class="b-categories__item">
+                    <a href="#" class="b-categories__card">
+                        <div class="b-categories__card-content">
+                            <h3 class="b-categories__card-title">Установка датчиков</h3>
+                            <p class="b-categories__card-desc">Для решения любых задач транспортных предприятий</p>
                         </div>
-
-                        <div class="services__card-image">
-                            <img src="./Image/CATEGORIES/IMAGE3.png">
+                        <div class="b-categories__card-media">
+                            <img class="b-categories__card-img" src="./Image/CATEGORIES/IMAGE3.png" alt="" width="200" height="150">
                         </div> 
                     </a> 
-                </div>
+                </li>
 
-                <div class="services__card ">
-                    <a href="#" class="services__card-link">
-                        <div class="services__card-text">
-                            <div class="card__text-title">Интеграция систем мониторинга</div>
-
-                            <div class="card__text-desc">Для упрощения бухучета и учета хозрасхода</div>
+                <li class="b-categories__item">
+                    <a href="#" class="b-categories__card">
+                        <div class="b-categories__card-content">
+                            <h3 class="b-categories__card-title">Интеграция систем мониторинга</h3>
+                            <p class="b-categories__card-desc">Для упрощения бухучета и учета хозрасхода</p>
                         </div>
-
-                        <div class="services__card-image">
-                            <img src="./Image/CATEGORIES/IMAGE4.png">
+                        <div class="b-categories__card-media">
+                            <img class="b-categories__card-img" src="./Image/CATEGORIES/IMAGE4.png" alt="" width="200" height="150">
                         </div> 
                     </a>
-                </div>
+                </li>
 
-                <div class="services__card ">
-                    <a href="#" class="services__card-link">
-                        <div class="services__card-text">
-                            <div class="card__text-title">Изготовление карт водителя всех образцов</div>
-
-                            <div class="card__text-desc">Помощь по любым картам водителя</div>
+                <li class="b-categories__item">
+                    <a href="#" class="b-categories__card">
+                        <div class="b-categories__card-content">
+                            <h3 class="b-categories__card-title">Изготовление карт водителя всех образцов</h3>
+                            <p class="b-categories__card-desc">Помощь по любым картам водителя</p>
                         </div>
-
-                        <div class="services__card-image">
-                            <img src="./Image/CATEGORIES/IMAGE5.png">
+                        <div class="b-categories__card-media">
+                            <img class="b-categories__card-img" src="./Image/CATEGORIES/IMAGE5.png" alt="" width="200" height="150">
                         </div> 
                     </a>
-                </div>
+                </li>
 
-                <div class="services__card ">
-                    <a href="#" class="services__card-link">
-                        <div class="services__card-text">
-                            <div class="card__text-title">Видеонаблюдение транспорта по&nbsp;ПП №1640 и ПП № 969</div>
-
-                            <div class="card__text-desc">Комплект для видеонаблюдения <br> на Ваш транспорт</div>
+                <li class="b-categories__item">
+                    <a href="#" class="b-categories__card">
+                        <div class="b-categories__card-content">
+                            <h3 class="b-categories__card-title">Видеонаблюдение транспорта по ПП №1640 и ПП № 969</h3>
+                            <p class="b-categories__card-desc">Комплект для видеонаблюдения <br> на Ваш транспорт</p>
                         </div>
-
-                        <div class="services__card-image">
-                            <img src="./Image/CATEGORIES/IMAGE6.png">
+                        <div class="b-categories__card-media">
+                            <img class="b-categories__card-img" src="./Image/CATEGORIES/IMAGE6.png" alt="" width="200" height="150">
                         </div> 
                     </a> 
-                </div>
+                </li>
 
-                <div class="services__card has_btn">
-                    <a href="#" class="services__card-link">
-                        <div class="services__card-text">
-                            <div class="card__text-title">Платформы для отслеживания</div>
+                <li class="b-categories__item b-categories__item--wide">
+                    <div class="b-categories__card b-categories__card--platforms">
+                        <div class="b-categories__card-content">
+                            <h3 class="b-categories__card-title b-categories__card-title--light">Платформы для отслеживания</h3>
                         </div>
-
-                        <div class="services__card-image">
-                            <img src="./Image/CATEGORIES/IMAGE7.png">
+                        <div class="b-categories__card-media last">
+                            <img class="b-categories__card-img" src="./Image/CATEGORIES/IMAGE7.png" alt="" width="200" height="150">
                         </div> 
-                    </a>
                         
-                    <div class="card__btn-inner">
-                        <a href="#" class="card__btn button">
-                            <span>Платформа</span>
-
-                            <img src="./Image/LOGO/axenta.svg" style="height:40px;" alt="">
-                        </a>
-
-                        <a href="#" class="card__btn button">
-                            <span>Платформа</span>
-
-                            <img src="./Image/LOGO/winlon.svg" style="height:40px;" alt="">
-
-                            <span>Wialon</span>
-                        </a>
-
-                        <a href="#" class="card__btn button">
-                            <span>Платформа</span>
-
-                            <span>АО ГЛОНАСС</span>
-                        </a>
-
-                        <a href="#" class="card__btn button">
-                            <span>Платформа</span>
-
-                            <img src="./Image/LOGO/globars-logo.png" style="height:40px;" alt="">
-
-                            <span>GLOBARS</span>
-                        </a>   
+                        <div class="b-categories__platforms-list">
+                            <a href="#" class="b-categories__platform-btn button">
+                                <span class="visually-hidden">Платформа Axenta</span>
+                                <img class="b-categories__platform-logo" src="./Image/LOGO/axenta.svg" alt="Axenta" width="40" height="40">
+                            </a>
+                            <a href="#" class="b-categories__platform-btn button">
+                                <span class="visually-hidden">Платформа Wialon</span>
+                                <img class="b-categories__platform-logo" src="./Image/LOGO/winlon.svg" alt="Wialon" width="40" height="40">
+                                <span class="b-categories__platform-name">Wialon</span>
+                            </a>
+                            <a href="#" class="b-categories__platform-btn button">
+                                <span class="visually-hidden">Платформа АО ГЛОНАСС</span>
+                                <span class="b-categories__platform-name">АО ГЛОНАСС</span>
+                            </a>
+                            <a href="#" class="b-categories__platform-btn button">
+                                <span class="visually-hidden">Платформа GLOBARS</span>
+                                <img class="b-categories__platform-logo" src="./Image/LOGO/globars-logo.png" alt="GLOBARS" width="40" height="40">
+                                <span class="b-categories__platform-name">GLOBARS</span>
+                            </a>   
+                        </div>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </section>
     
@@ -1367,8 +1272,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
     <script src="./JS/main.js"></script>
-    <script src="./JS/forms.js"></script>
-    <script src="./JS/maps.js"></script>
     <script src="./JS/carousel.js"></script>
 </body>
 </html>
