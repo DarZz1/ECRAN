@@ -1048,14 +1048,14 @@ a[data-fancybox] img {
     }
 }
 
-.header__inner {
+.header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 @media (max-width: 1400px) {
-    .header__inner {
+    .header__wrapper {
         position: relative;
         padding-bottom: 20px;
         align-items: flex-start;
@@ -1066,20 +1066,20 @@ a[data-fancybox] img {
     align-items: center;
 }
 
-.phone__social {
+.header__contacts {
     display: flex;
     margin-bottom: 8px;
 }
 
-.header__phone {
+.header__phones {
     display: flex;
 }
 
-.header__phone-inner svg path {
+.header__phone svg path {
     fill: none;
 }
 
-.header__social {
+.header__contacts {
     display: flex;
     gap: 8px;
     align-items: center;
@@ -1090,7 +1090,7 @@ a[data-fancybox] img {
     flex-direction: column;
 }
 
-.header__phone-inner {
+.header__phone {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -1110,13 +1110,13 @@ a[data-fancybox] img {
     }
 }
 
-.header__nav-inner {
+.header__nav-list {
     display: flex;
     font-weight: 400;
     letter-spacing: -0.4px;
 }
 
-.nav__link {
+.header__nav-link {
     padding: 0 12px;
 }
 
@@ -1146,18 +1146,18 @@ a[data-fancybox] img {
     }
 }
 
-.header__phone-inner:hover {
+.header__phone:hover {
     background: #0088CC;
     color: #FFF;
     transition: .5s;
 }
 
-.header__phone-inner:hover svg path {
+.header__phone:hover svg path {
     stroke: #FFF;
     transition: .5s;
 }
 
-.nav__link:hover {
+.header__nav-link:hover {
     text-shadow: 0 0 .65px #2D333D;
     transition: .5s;
 }
