@@ -114,7 +114,7 @@
         </div>
     </header>
 
-    <nav class="navbar" aria-label="Мобильная навигация">
+    <nav class="navbar" aria-label="mobile-nav">
         <div class="navbar__row container">
             <button type="button" class="navbar__burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="navbar__mobile">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="navbar__burger-icon" viewBox="0 0 16 16" aria-hidden="true">
@@ -200,7 +200,7 @@
         <div class="container">
             <div class="b-hero__wrapper">
                 <div class="b-hero__content">
-                    <h1 id="hero-title" class="b-hero__title font-title">
+                    <h1 class="b-hero__title font-title">
                         Поможем сделать бизнес прибыльнее!
                     </h1>
                     <p class="b-hero__description">
@@ -274,7 +274,7 @@
     <section class="section b-categories" aria-labelledby="categories-title">
         <div class="container">
             <div class="b-categories__head">
-                <h2 id="categories-title" class="b-categories__title h1 font-title">Наши услуги</h2>
+                <h2 class="b-categories__title h1 font-title">Наши услуги</h2>
                 <a href="#" class="b-categories__all-link">
                     <span class="b-categories__all-text">Смотреть все услуги</span>
                     <svg class="b-categories__all-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -391,174 +391,147 @@
         </div>
     </section>
     
-    <section class="section b-gallery">
+    <section class="section b-gallery" aria-labelledby="gallery-title">
         <div class="container">
-            <div class="section__header">
-                <h2 class="section__title h1 font-title">Поможем Вашему бизнесу</h2>
-                <div class="section__introtext"></div>
+            <div class="b-gallery__head">
+                <h2 id="gallery-title" class="b-gallery__title h1 font-title">Поможем Вашему бизнесу</h2>
+                <p class="b-gallery__introtext"></p>
             </div>
-        
-            <div class="slider__gallery swiper arrow pager gallerySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="#" class="slider__gallery-inner">
-                            <div class="slider__card-image">
-                                <img src="./Image/GALLERY/SLIDE1.png" alt="">
+
+            <div class="b-gallery__slider swiper gallerySwiper" role="region" aria-label="Примеры отраслей">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="#" class="b-gallery__card">
+                            <div class="b-gallery__card-media">
+                                <img class="b-gallery__card-img" src="./Image/GALLERY/SLIDE1.png" alt="Мониторинг грузоперевозок" width="400" height="300">
                             </div>
-
-                            <div class="slider__card-text">
-                                <div class="card__text-title">Грузоперевозки</div>
-
-                                <div class="slider__text-desc">Мониторинг всех этапов деятельности</div>
+                            <div class="b-gallery__card-content">
+                                <h3 class="b-gallery__card-title">Грузоперевозки</h3>
+                                <p class="b-gallery__card-desc">Мониторинг всех этапов деятельности</p>
                             </div>
                         </a>
-                    </div>
+                    </li>
 
-                    <div class="swiper-slide">
-                        <a href="#" class="slider__gallery-inner">
-                            <div class="slider__card-image">
-                                <img src="./Image/GALLERY/SLIDE2.jpg" alt="">
+                    <li class="swiper-slide">
+                        <a href="#" class="b-gallery__card">
+                            <div class="b-gallery__card-media">
+                                <img class="b-gallery__card-img" src="./Image/GALLERY/SLIDE2.jpg" alt="Доставка продуктов питания и товаров" width="400" height="300">
                             </div>
-
-                            <div class="slider__card-text">
-                                <div class="card__text-title">Доставка продуктов питания и товаров</div>
-
-                                <div class="slider__text-desc">Мониторинг всех этапов деятельности</div>
+                            <div class="b-gallery__card-content">
+                                <h3 class="b-gallery__card-title">Доставка продуктов питания и товаров</h3>
+                                <p class="b-gallery__card-desc">Мониторинг всех этапов деятельности</p>
                             </div>
                         </a>
-                    </div>
+                    </li>
 
-                    <div class="swiper-slide">
-                        <a href="#" class="slider__gallery-inner">
-                            <div class="slider__card-image">
-                                <img src="./Image/GALLERY/SLIDE3.png" alt="">
+                    <li class="swiper-slide">
+                        <a href="#" class="b-gallery__card">
+                            <div class="b-gallery__card-media">
+                                <img class="b-gallery__card-img" src="./Image/GALLERY/SLIDE3.png" alt="Контроль в строительстве" width="400" height="300">
                             </div>
-
-                            <div class="slider__card-text">
-                                <div class="card__text-title">Строительство</div>
-
-                                <div class="slider__text-desc">Продвинутый уровень контроля, поддержки и&nbsp;управления</div>
+                            <div class="b-gallery__card-content">
+                                <h3 class="b-gallery__card-title">Строительство</h3>
+                                <p class="b-gallery__card-desc">Продвинутый уровень контроля, поддержки и управления</p>
                             </div>
                         </a>
-                    </div>
+                    </li>
 
-                    <div class="swiper-slide">
-                        <a href="#" class="slider__gallery-inner">
-                            <div class="slider__card-image">
-                                <img src="./Image/GALLERY/SLIDE4.jpg" alt="">
+                    <li class="swiper-slide">
+                        <a href="#" class="b-gallery__card">
+                            <div class="b-gallery__card-media">
+                                <img class="b-gallery__card-img" src="./Image/GALLERY/SLIDE4.jpg" alt="Содержание дорожно-транспортной сети" width="400" height="300">
                             </div>
-
-                            <div class="slider__card-text">
-                                <div class="card__text-title">Содержание дорожно-транспортной сети</div>
-
-                                <div class="slider__text-desc">Прозрачность и&nbsp;эффективность деятельности</div>
+                            <div class="b-gallery__card-content">
+                                <h3 class="b-gallery__card-title">Содержание дорожно-транспортной сети</h3>
+                                <p class="b-gallery__card-desc">Прозрачность и эффективность деятельности</p>
                             </div>
                         </a>
-                    </div>
+                    </li>
 
-                    <div class="swiper-slide">
-                        <a href="#" class="slider__gallery-inner">
-                            <div class="slider__card-image">
-                                <img src="./Image/GALLERY/SLIDE5.jpg" alt="">
+                    <li class="swiper-slide">
+                        <a href="#" class="b-gallery__card">
+                            <div class="b-gallery__card-media">
+                                <img class="b-gallery__card-img" src="./Image/GALLERY/SLIDE5.jpg" alt="Контроль ж/д транспорта" width="400" height="300">
                             </div>
-
-                            <div class="slider__card-text">
-                                <div class="card__text-title">Ж/Д транспорт</div>
-
-                                <div class="slider__text-desc">Контроль на&nbsp;всех этапах</div>
+                            <div class="b-gallery__card-content">
+                                <h3 class="b-gallery__card-title">Ж/Д транспорт</h3>
+                                <p class="b-gallery__card-desc">Контроль на всех этапах</p>
                             </div>
                         </a>
-                    </div>
+                    </li>
 
-                    <div class="swiper-slide">
-                        <a href="#" class="slider__gallery-inner">
-                            <div class="slider__card-image">
-                                <img src="./Image/GALLERY/SLIDE6.png" alt="">
+                    <li class="swiper-slide">
+                        <a href="#" class="b-gallery__card">
+                            <div class="b-gallery__card-media">
+                                <img class="b-gallery__card-img" src="./Image/GALLERY/SLIDE6.png" alt="Контроль в сельском хозяйстве" width="400" height="300">
                             </div>
-
-                            <div class="slider__card-text">
-                                <div class="card__text-title">Сельское хозяйство</div>
-
-                                <div class="slider__text-desc">Контроль всех этапов сельскохозяйственной деятельности</div>
+                            <div class="b-gallery__card-content">
+                                <h3 class="b-gallery__card-title">Сельское хозяйство</h3>
+                                <p class="b-gallery__card-desc">Контроль всех этапов сельскохозяйственной деятельности</p>
                             </div>
                         </a>
-                    </div>
+                    </li>
 
-                    <div class="swiper-slide">
-                        <a href="#" class="slider__gallery-inner">
-                            <div class="slider__card-image">
-                                <img src="./Image/GALLERY/SLIDE7.png" alt="">
+                    <li class="swiper-slide">
+                        <a href="#" class="b-gallery__card">
+                            <div class="b-gallery__card-media">
+                                <img class="b-gallery__card-img" src="./Image/GALLERY/SLIDE7.png" alt="Перевозка опасных грузов" width="400" height="300">
                             </div>
-
-                            <div class="slider__card-text">
-                                <div class="card__text-title">Перевозка опасных грузов</div>
-
-                                <div class="slider__text-desc">Контроль всех этапов перевозки</div>
+                            <div class="b-gallery__card-content">
+                                <h3 class="b-gallery__card-title">Перевозка опасных грузов</h3>
+                                <p class="b-gallery__card-desc">Контроль всех этапов перевозки</p>
                             </div>
                         </a>
-                    </div>
+                    </li>
 
-                    <div class="swiper-slide">
-                        <a href="#" class="slider__gallery-inner">
-                            <div class="slider__card-image">
-                                <img src="./Image/GALLERY/SLIDE8.jpg" alt="">
+                    <li class="swiper-slide">
+                        <a href="#" class="b-gallery__card">
+                            <div class="b-gallery__card-media">
+                                <img class="b-gallery__card-img" src="./Image/GALLERY/SLIDE8.jpg" alt="Контроль пассажирских перевозок" width="400" height="300">
                             </div>
-
-                            <div class="slider__card-text">
-                                <div class="card__text-title">Пассажирские перевозки</div>
-
-                                <div class="slider__text-desc">Контроль всех этапов пассажирских перевозок</div>
+                            <div class="b-gallery__card-content">
+                                <h3 class="b-gallery__card-title">Пассажирские перевозки</h3>
+                                <p class="b-gallery__card-desc">Контроль всех этапов пассажирских перевозок</p>
                             </div>
                         </a>
-                    </div>
+                    </li>
 
-                    <div class="swiper-slide">
-                        <a href="#" class="slider__gallery-inner">
-                            <div class="slider__card-image">
-                                <img src="./Image/GALLERY/SLIDE9.jpg" alt="">
+                    <li class="swiper-slide">
+                        <a href="#" class="b-gallery__card">
+                            <div class="b-gallery__card-media">
+                                <img class="b-gallery__card-img" src="./Image/GALLERY/SLIDE9.jpg" alt="Услуги тахографии" width="400" height="300">
                             </div>
-
-                            <div class="slider__card-text">
-                                <div class="card__text-title">Тахография</div>
-
-                                <div class="slider__text-desc">Весь спектр услуг</div>
+                            <div class="b-gallery__card-content">
+                                <h3 class="b-gallery__card-title">Тахография</h3>
+                                <p class="b-gallery__card-desc">Весь спектр услуг</p>
                             </div>
                         </a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
 
-                <div class="swiper-button-next"></div>
-
-                <div class="swiper-button-prev"></div>
-                    
-                <div class="swiper-pagination"></div>
+                <button type="button" class="swiper-button-next" aria-label="Следующий слайд"></button>
+                <button type="button" class="swiper-button-prev" aria-label="Предыдущий слайд"></button>
+                <div class="swiper-pagination" role="tablist" aria-label="Пагинация слайдов"></div>
             </div>
         </div>
     </section>
 
-    <section class="section b-text-media">
+    <section class="section b-text-media" aria-labelledby="company-title">
         <div class="b-text-media__wrapper">
             <div class="container">
-                <div class="about__inner">
-                    <div class="about__inner-top">
-                        <div class="about__inner-text">
-                            <div class="about__text-top">
-                                <div class="text__top-title">
-                                    <h2>Про компанию АО «Экран»</h2>
-                                </div>
-
-                                <div class="text__top-desc">
-                                    <p>Является правоприемником областного производственного объединения «Экран», которое занималось установкой, ремонтом и&nbsp;тех. обслуживанием СКПТ с&nbsp;1972&nbsp;года</p>
-                                </div>
+                <div class="b-text-media__content">
+                    <div class="b-text-media__top">
+                        <div class="b-text-media__text-block">
+                            <div class="b-text-media__header">
+                                <h2 class="b-text-media__title">Про компанию АО «Экран»</h2>
+                                <p class="b-text-media__subtitle">Является правоприемником областного производственного объединения «Экран», которое занималось установкой, ремонтом и тех. обслуживанием СКПТ с 1972 года</p>
                             </div>
 
-                            <div class="about__text-bottom">
-                                <div class="about__text-wrapper">
-                                    <div class="text__bottom-title">
-                                        <h3>Более 50 лет&nbsp;основной деятельностью&nbsp;АО «Экран»&nbsp;является:</h3>
-                                    </div>
+                            <div class="b-text-media__activities">
+                                <div class="b-text-media__activities-wrapper">
+                                    <h3 class="b-text-media__activities-title">Более 50 лет&nbsp;основной деятельностью&nbsp;АО «Экран»&nbsp;является:</h3>
 
-                                    <div class="text__bottom-desc">
+                                    <div class="b-text-media__activities-item">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#EEF1F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                         </svg>
@@ -566,7 +539,7 @@
                                         <p>Установка, ремонт и техническое обслуживание СКПТ (систем коллективного приема -телевидения) на жилом фонде города Кирова</p>
                                     </div>
                                                                                                                                                         
-                                    <div class="text__bottom-desc">
+                                    <div class="b-text-media__activities-item">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#EEF1F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                         </svg>
@@ -574,7 +547,7 @@
                                         <p>Установка и обслуживание систем мониторинга автотранспорта</p>
                                     </div>
                                                                                                                                                         
-                                    <div class="text__bottom-desc">
+                                    <div class="b-text-media__activities-item">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#EEF1F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                         </svg>
@@ -582,7 +555,7 @@
                                         <p>Официальная мастерская по установке, ремонту и техническому обслуживанию тахографов с блоком СКЗИ</p>
                                     </div>
                                                                                                                                                         
-                                    <div class="text__bottom-desc">
+                                    <div class="b-text-media__activities-item">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#EEF1F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                         </svg>
@@ -591,28 +564,30 @@
                                     </div>
                                 </div>
 
-                                <a href="./Image/TEXT-MEDIA/text-media.jpg" class="text__bottom-image">
-                                    <img src="./Image/TEXT-MEDIA/text-media.jpg" alt="" loading="lazy">
+                                <a href="./Image/TEXT-MEDIA/text-media.jpg" class="b-text-media__mobile-image" aria-label="Открыть изображение в полном размере">
+                                    <img src="./Image/TEXT-MEDIA/text-media.jpg" alt="Производственная деятельность компании Экран" loading="lazy" width="586" height="700">>
                                 </a>
                             </div>
                         </div>
 
-                        <div class="about__inner-image">
-                            <a href="./Image/TEXT-MEDIA/text-media.jpg" class="about__item-top about__image-top">
-                                <img src="./Image/TEXT-MEDIA/text-media.jpg" alt="" loading="lazy" width="586" height="700">
+                        <div class="b-text-media__main-image">
+                            <a href="./Image/TEXT-MEDIA/text-media.jpg" class="b-text-media__image-link" aria-label="Открыть изображение в полном размере">
+                                <img src="./Image/TEXT-MEDIA/text-media.jpg" alt="Производственная деятельность компании Экран" loading="lazy" width="586" height="700">
                             </a>
                         </div>
                     </div>
 
-                    <div class="about__inner-bottom">
-                        <div class="about__inner-video">
-                            <video src="./Video/VIDEO1.mp4" width="708" height="auto" autoplay="" loop="" controls="" muted="muted"></video>
+                    <div class="b-text-media__bottom">
+                        <div class="b-text-media__video-wrapper">
+                            <video class="b-text-media__video" src="./Video/VIDEO1.mp4" width="708" autoplay loop controls muted playsinline>
+                                Ваш браузер не поддерживает видео тег.
+                            </video>
                         </div>
 
-                        <div class="about__bottom-text">
-                            <div class="text__bottom-title">Нам доверяют</div>
+                        <div class="b-text-media__trust-block">
+                            <h3 class="b-text-media__trust-title">Нам доверяют</h3>
 
-                            <div class="text-bottom-content">
+                            <div class="b-text-media__trust-content">
                                 <p>За более чем 50-летнюю историю нашего предприятие самые главные правила, которыми мы руководствуемся - &nbsp;это честность, ответственность и защита интересов наших клиентов. Мы оказываем содействие нашим клиентам отстоять гарантию на заводах-изготовителях для минимизации финансовых и временных потерь. Кроме того, уделяется приоритетное значение качеству и срокам оказываемых услуг, для этого наши специалисты проходят постоянное обучение. Мы никогда не оставляем без внимания наших клиентов и оказываем добросовестную, честную, грамотную консультацию в быстро меняющемся законодательстве РФ в сфере тахографии и мониторинга транспорта. Наше предприятие имеет в собственности административно-производственное здание, сервисные помещения и производственную территорию в центре города с удобной транспортной развязкой, что обеспечивает Вам долгосрочное обслуживание на весь гарантийный и послегарантийный срок.&nbsp;</p>
                             </div>                                                                                                                                                     
                         </div>
@@ -622,334 +597,343 @@
         </div>
     </section>
                                                                                                                     
-    <section class="section b-news">
+    <section class="section b-news" aria-labelledby="examples-title">
         <div class="container">
-            <div class="section__header">
-                <h2 class="section__title h1 font-title">Примеры использования</h2>
-
-                <div class="section__introtext"></div>
+            <div class="b-news__head">
+                <h2 class="b-news__title h1 font-title">Примеры использования</h2>
+                <p class="b-news__introtext"></p>
             </div>
 
-            <div class="example__inner swiper arrow pager exampleSwiper">
-                <div class="swiper-wrapper">
-                    <div class="example__items swiper-slide">
-                        <a class="example__item" href="#">
-                            <div class="example__image">
-                                <img src="./Image/NEWS/IMAGE1.webp" alt="" width="464" height="224" loading="lazy">
-                            </div>
+            <div class="b-news__slider swiper arrow pager exampleSwiper" role="region" aria-label="Примеры использования">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <article class="b-news__card">
+                            <a class="b-news__card-link" href="#" aria-label="Нецелевое использование Транспортных средств">
+                                <div class="b-news__card-media">
+                                    <img class="b-news__card-img" src="./Image/NEWS/IMAGE1.webp" alt="Нецелевое использование Транспортных средств" width="464" height="224" loading="lazy">
+                                </div>
+                                <div class="b-news__card-content">
+                                    <span class="b-news__card-tag">Практические примеры</span>
+                                    <h3 class="b-news__card-title">Нецелевое использование Транспортных средств</h3>
+                                    <p class="b-news__card-desc">Увеличение производительности вдвое</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
 
-                            <div class="example__text">
-                                <div class="example__text-introtext">Практические примеры</div>
+                    <li class="swiper-slide">
+                        <article class="b-news__card">
+                            <a class="b-news__card-link" href="#" aria-label="Обнаружили хищение топлива">
+                                <div class="b-news__card-media">
+                                    <img class="b-news__card-img" src="./Image/NEWS/IMAGE2.webp" alt="Обнаружили хищение топлива" width="464" height="224" loading="lazy">
+                                </div>
+                                <div class="b-news__card-content">
+                                    <span class="b-news__card-tag">Практические примеры</span>
+                                    <h3 class="b-news__card-title">Обнаружили хищение топлива</h3>
+                                    <p class="b-news__card-desc">Экономия до 69 %</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
 
-                                <div class="example__text-title">Нецелевое использование Транспортных средств</div>
+                    <li class="swiper-slide">
+                        <article class="b-news__card">
+                            <a class="b-news__card-link" href="#" aria-label="Контроль температурных условий перевозки">
+                                <div class="b-news__card-media">
+                                    <img class="b-news__card-img" src="./Image/NEWS/IMAGE3.webp" alt="Контроль температурных условий перевозки продуктов торговыми сетями" width="464" height="224" loading="lazy">
+                                </div>
+                                <div class="b-news__card-content">
+                                    <span class="b-news__card-tag">Практические примеры</span>
+                                    <h3 class="b-news__card-title">Контроль температурных условий перевозки продуктов торговыми сетями</h3>
+                                    <p class="b-news__card-desc">Сокращение расходов на техобслуживание и обеспечение безопасности на объекте</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
 
-                                <div class="example__text-desc">Увеличение производительности вдвое</div>
-                            </div>
-                        </a>
-                    </div>
+                    <li class="swiper-slide">
+                        <article class="b-news__card">
+                            <a class="b-news__card-link" href="#" aria-label="Автоматизация бухгалтерии">
+                                <div class="b-news__card-media">
+                                    <img class="b-news__card-img" src="./Image/NEWS/IMAGE4.webp" alt="Автоматизация бухгалтерии с помощью автоматической выгрузки отчетов в 1С" width="464" height="224" loading="lazy">
+                                </div>
+                                <div class="b-news__card-content">
+                                    <span class="b-news__card-tag">Практическое применение</span>
+                                    <h3 class="b-news__card-title">Автоматизация бухгалтерии с помощью автоматической выгрузки отчетов в 1С</h3>
+                                    <p class="b-news__card-desc">Значительно сократили документооборот</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
 
-                    <div class="example__items swiper-slide">
-                        <a class="example__item" href="#">
-                            <div class="example__image">
-                                <img src="./Image/NEWS/IMAGE2.webp" alt="" width="464" height="224" loading="lazy">
-                            </div>
-                            <div class="example__text">
-                                <div class="example__text-introtext">Практические примеры</div>
+                    <li class="swiper-slide">
+                        <article class="b-news__card">
+                            <a class="b-news__card-link" href="#" aria-label="Выполнение требований законодательства">
+                                <div class="b-news__card-media">
+                                    <img class="b-news__card-img" src="./Image/NEWS/IMAGE5.webp" alt="Выполнение требований законодательства, связанных с регулированием режима труда и отдыха водителя" width="464" height="224" loading="lazy">
+                                </div>
+                                <div class="b-news__card-content">
+                                    <span class="b-news__card-tag">Поможем исправить</span>
+                                    <h3 class="b-news__card-title">Выполнение требований законодательства, связанных с регулированием режима труда и отдыха водителя</h3>
+                                    <p class="b-news__card-desc">Первые на Кировском рынке</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
 
-                                <div class="example__text-title">Обнаружили хищение топлива</div>
+                    <li class="swiper-slide">
+                        <article class="b-news__card">
+                            <a class="b-news__card-link" href="#" aria-label="Установка мониторинга для Лесопромышленного холдинга">
+                                <div class="b-news__card-media">
+                                    <img class="b-news__card-img" src="./Image/NEWS/IMAGE6.webp" alt="Установка мониторинга для Лесопромышленного холдинга" width="464" height="224" loading="lazy">
+                                </div>
+                                <div class="b-news__card-content">
+                                    <span class="b-news__card-tag">Новые разработки</span>
+                                    <h3 class="b-news__card-title">Установка мониторинга для Лесопромышленного холдинга</h3>
+                                    <p class="b-news__card-desc">Трекер для работы в условиях отсутствия сотовой связи</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
 
-                                <div class="example__text-desc">Экономия до 69 %</div>
-                            </div>
-                        </a>
-                    </div>
+                    <li class="swiper-slide">
+                        <article class="b-news__card">
+                            <a class="b-news__card-link" href="#" aria-label="Мониторинг в Сельском хозяйстве">
+                                <div class="b-news__card-media">
+                                    <img class="b-news__card-img" src="./Image/NEWS/IMAGE7.webp" alt="Мониторинг в Сельском хозяйстве" width="464" height="224" loading="lazy">
+                                </div>
+                                <div class="b-news__card-content">
+                                    <span class="b-news__card-tag">Практическое применение</span>
+                                    <h3 class="b-news__card-title">Мониторинг в Сельском хозяйстве</h3>
+                                    <p class="b-news__card-desc">Увеличение урожайности и повышение рентабельности</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
 
-                    <div class="example__items swiper-slide">
-                        <a class="example__item" href="#">
-                            <div class="example__image">
-                                <img src="./Image/NEWS/IMAGE3.webp" alt="" width="464" height="224" loading="lazy">
-                            </div>
-                            <div class="example__text">
-                                <div class="example__text-introtext">Практические примеры</div>
-                                
-                                <div class="example__text-title">Контроль температурных условий перевозки продуктов торговыми сетями</div>
-
-                                <div class="example__text-desc">Сокращение расходов на&nbsp;техобслуживание и&nbsp;обеспечение безопасности на&nbsp;объекте</div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="example__items swiper-slide">
-                        <a class="example__item" href="#">
-                            <div class="example__image">
-                                <img src="./Image/NEWS/IMAGE4.webp" alt="" width="464" height="224" loading="lazy">
-                            </div>
-                            <div class="example__text">
-                                <div class="example__text-introtext">Практическое применение</div>
-
-                                <div class="example__text-title">Автоматизация бухгалтерии с помощью автоматической выгрузки отчетов в 1С</div>
-
-                                <div class="example__text-desc">Значительно сократили документооборот</div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="example__items swiper-slide">
-                        <a class="example__item" href="#">
-                            <div class="example__image">
-                                <img src="./Image/NEWS/IMAGE5.webp" alt="" width="464" height="224" loading="lazy">
-                            </div>
-                            <div class="example__text">
-                                <div class="example__text-introtext">Поможем исправить</div>
-                                
-                                <div class="example__text-title">Выполнение требований законодательства, связанных с регулированием режима труда и отдыха водителя</div>
-                                
-                                <div class="example__text-desc">Первые на Кировском рынке</div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="example__items swiper-slide">
-                        <a class="example__item" href="#">
-                            <div class="example__image">
-                                <img src="./Image/NEWS/IMAGE6.webp" alt="" width="464" height="224" loading="lazy">
-                            </div>
-                            <div class="example__text">
-                                <div class="example__text-introtext">Новые разработки</div>
-                                
-                                <div class="example__text-title">Установка мониторинга для Лесопромышленного холдинга</div>
-                                
-                                <div class="example__text-desc">Трекер для работы в условиях отсутствия сотовой связи</div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="example__items swiper-slide">
-                        <a class="example__item" href="#">
-                            <div class="example__image">
-                                <img src="./Image/NEWS/IMAGE7.webp" alt="" width="464" height="224" loading="lazy">
-                            </div>
-
-                            <div class="example__text">
-                                <div class="example__text-introtext">Практическое применение</div>
-
-                                <div class="example__text-title">Мониторинг в Сельском хозяйстве</div>
-
-                                <div class="example__text-desc">Увеличение урожайности и повышение рентабельности</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button swiper-button-prev"></div>
-                
-                <div class="swiper-button swiper-button-next"></div>
+                <div class="swiper-pagination" role="tablist" aria-label="Пагинация слайдов"></div>
+                <button type="button" class="swiper-button swiper-button-prev" aria-label="Предыдущий слайд"></button>
+                <button type="button" class="swiper-button swiper-button-next" aria-label="Следующий слайд"></button>
             </div>
 
-            <div class="example__btn">
-                <a href="#" class="example__btn-link">Все примеры</a>
+            <div class="b-news__action">
+                <a href="#" class="b-news__action-link">Все примеры</a>
             </div>
         </div>
     </section>
 
-    <section class="section b-partners">
+    <section class="section b-partners" aria-labelledby="partners-title">
         <div class="container">
-            <div class="section__header">
-                <h2 class="section__title h1 font-title">Наши партнёры</h2>
-
-                <div class="section__introtext"></div>
+            <div class="b-partners__head">
+                <h2 class="b-partners__title h1 font-title">Наши партнёры</h2>
+                <p class="b-partners__introtext"></p>
             </div>
 
-                <div class="b-partners__slider swiper arrow pager partnersSwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/kuprit.png" loading="lazy">
+            <div class="b-partners__slider swiper arrow pager partnersSwiper" role="region" aria-label="Слайдер партнеров">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/kuprit.png" alt="Куприт" loading="lazy" width="150" height="80">
                         </div>
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/logorosseti.png" loading="lazy">
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/logorosseti.png" alt="Логороссети" loading="lazy" width="150" height="80">
                         </div>
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/profstroj.jpg" loading="lazy">
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/profstroj.jpg" alt="Профстрой" loading="lazy" width="150" height="80">
                         </div>
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/gordormoststroj.jpg" loading="lazy">
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/gordormoststroj.jpg" alt="Гормостстрой" loading="lazy" width="150" height="80">
                         </div>
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/3iuvztwdtpk.jpg" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/traker.jpg" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/ooo-vyatskij-fanernyj-kombinat.png" loading="lazy">
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/3iuvztwdtpk.jpg" alt="Партнер" loading="lazy" width="150" height="80">
                         </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/traker.jpg" alt="Трекер" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/ooo-vyatskij-fanernyj-kombinat.png" alt="Вятский фанерный комбинат" loading="lazy" width="150" height="80">
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/strojbat.png" alt="Стройбат" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/magnum.jpg" alt="Магнум" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/group-1.png" alt="Group 1" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/uralhim.jpg" alt="Уралхим" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/dzncrfz-lsvrf.jpg" alt="Партнер" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/danar.png" alt="Данар" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/zao-vyatkacum.png" alt="ВяткаЦУМ" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/energiya.jpg" alt="Энергия" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/zao-pishhekombinat.png" alt="Пищекомбинат" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/zao-kmk.png" alt="КМК" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="/Image/PARTNERS/himzashhita.jpg" alt="Химзащита" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/urzhumskij-pmk-16.png" alt="Уржумский ПМК-16" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/ooo-avtokolonna-1213.png" alt="Автоколонна 1213" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/oblkomunservis.png" alt="Облкомунсервис" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/nizhneivkino.png" alt="Нижнеивкино" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/kuu-4.png" alt="КУУ-4" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/kirs-kabal.png" alt="Кирс Кабал" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/kirov-trans-stroj.png" alt="Киров Транс Строй" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                    <li class="swiper-slide">
+                        <div class="b-partners__item">
+                            <img src="./Image/PARTNERS/kirovsignal.png" alt="Кировсигнал" loading="lazy" width="150" height="80">
+                        </div>
+                    </li> 
+                </ul>
 
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/strojbat.png" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/magnum.jpg" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/group-1.png" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/uralhim.jpg" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/dzncrfz-lsvrf.jpg" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/danar.png" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/zao-vyatkacum.png" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/energiya.jpg" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/zao-pishhekombinat.png" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/zao-kmk.png" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="/Image/PARTNERS/himzashhita.jpg" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/urzhumskij-pmk-16.png" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/ooo-avtokolonna-1213.png" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/oblkomunservis.png" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/nizhneivkino.png" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/kuu-4.png" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/kirs-kabal.png" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/kirov-trans-stroj.png" loading="lazy">
-                        </div> 
-
-                        <div class="swiper-slide b-partners__item">
-                            <img src="./Image/PARTNERS/kirovsignal.png" loading="lazy">
-                        </div> 
-                    </div>
-
-                    <div class="swiper-pagination"></div>
-
-                    <div class="swiper-button swiper-button-prev"></div>
-                    
-                    <div class="swiper-button swiper-button-next"></div>
-                </div>
+                <div class="swiper-pagination" role="tablist" aria-label="Пагинация слайдов"></div>
+                <button type="button" class="swiper-button swiper-button-prev" aria-label="Предыдущий слайд"></button>
+                <button type="button" class="swiper-button swiper-button-next" aria-label="Следующий слайд"></button>
             </div>
         </div>
     </section>
 
-    <section class="section b-form">
+    <section class="section b-form" aria-labelledby="form-title">
         <div class="container">
-            <div class="section__header">
-                <h2 class="section__title h1 font-title">Заполните форму для обратной связи</h2>
-
-                <div class="section__introtext">Ответим на все вопросы </div>
+            <div class="b-form__head">
+                <h2 class="b-form__title h1 font-title">Заполните форму для обратной связи</h2>
+                <p class="b-form__subtitle">Ответим на все вопросы</p>
             </div>
 
             <div class="b-form__inner">
-                <form class="b-form__form form">
+                <form class="b-form__form form" action="#" method="POST" novalidate>
                     <div class="b-form__text">
-                        <div class="b-form__text-title">Заполните форму для обратной связи</div>
-                        
-                        <div class="b-form__text-desc">Ответим на все вопросы </div>
+                        <h3 class="b-form__text-title">Заполните форму для обратной связи</h3>
+                        <p class="b-form__text-desc">Ответим на все вопросы</p>
                     </div>
-                                                                
-                    <div class="form__name-email">
-                        <label class="field">
-                            <input class="input" type="text" name="fullname" value="" placeholder=" " required="">
-
-                            <div class="field-label">Ваше имя</div>
+                                                                    
+                    <div class="b-form__row">
+                        <label class="b-form__field field">
+                            <input class="b-form__input input" type="text" name="fullname" id="fullname" value="" placeholder=" " required autocomplete="name">
+                            <span class="field-label">Ваше имя</span>
                         </label>
 
-                        <label class="field">
-                            <input class="input" type="email" name="email" value="" placeholder=" " required="">
-
-                            <div class="field-label">Ваш email</div>
+                        <label class="b-form__field field">
+                            <input class="b-form__input input" type="email" name="email" id="email" value="" placeholder=" " required autocomplete="email">
+                            <span class="field-label">Ваш email</span>
                         </label>                    
                     </div>
 
-                    <label class="field">
-                        <textarea class="input" name="message" placeholder=" " required=""></textarea>
-
-                        <div class="field-label">Сообщение</div>
+                    <label class="b-form__field field">
+                        <textarea class="b-form__textarea input" name="message" id="message" placeholder=" " required></textarea>
+                        <span class="field-label">Сообщение</span>
                     </label>   
 
-                    <div class="form-box-footer">
-                        <button class="form__box-button is-fullwidth" type="submit">
-                            Отправить форму
-
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="b-form__actions">
+                        <button class="b-form__button form__box-button is-fullwidth" type="submit">
+                            <span>Отправить форму</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path d="M17 8L21 12M21 12L17 16M21 12L3 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg>
                         </button>
 
-                        <div class="form__footer-checkbox">
-                            <label class="checkbox footer__checkbox">
-                                <input id="checkbox" name="checkbox" type="checkbox" checked="">
-
-                                <div class="checkbox__checkmark"></div>
-
+                        <div class="b-form__consent">
+                            <label class="b-form__checkbox checkbox footer__checkbox">
+                                <input class="b-form__checkbox-input" id="checkbox" name="checkbox" type="checkbox" checked>
+                                <span class="checkbox__checkmark" aria-hidden="true"></span>
                                 <span class="checkbox__body">
                                     Даю согласие на обработку
-
-                                    <a href="#">персональных данных</a>
+                                    <a class="b-form__link" href="#">персональных данных</a>
                                 </span>
                             </label>
                         </div>
                     </div> 
                 </form>
         
-                <div class="b-form__image">
-                    <img src="./Image/FORM/IMAGE1.png">
+                <div class="b-form__media">
+                    <img class="b-form__img" src="./Image/FORM/IMAGE1.png" alt="Иллюстрация обратной связи" loading="lazy" width="500" height="600">
                 </div>
             </div>
         </div>
     </section>
       
-    <section class="section b-faq">
+    <section class="section b-faq" aria-labelledby="faq-title">
         <div class="container">
-            <div class="section__header">
+            <div class="section__header b-faq__head">
                 <h2 class="section__title h1 font-title">Ваш вопрос - наш ответ</h2>
-
                 <div class="section__introtext"></div>
             </div>
 
@@ -1076,7 +1060,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" aria-labelledby="footer">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer-first">
@@ -1270,7 +1254,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
     <script src="./JS/main.js"></script>
     <script src="./JS/carousel.js"></script>
 </body>
